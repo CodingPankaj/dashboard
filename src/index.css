@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Defalut Colors */
+:root {
+  --accent-color: 114, 92, 255;
+}
+
+/* Light Mode Colors */
+:root[data-theme="light"] {
+  --bg-primary-color: 255, 255, 255;
+  --bg-secondary-color: 245, 246, 250;
+  --text-primary-color: 34, 47, 54;
+  --text-secondary-color: 151, 164, 194;
+  --icon-color: 97, 116, 143;
+  --border-color: 230, 240, 242;
+}
+
+/* Dark Mode Colors */
+:root[data-theme="dark"] {
+  --bg-primary-color: 35, 34, 38;
+  --bg-secondary-color: 24, 23, 26;
+  --text-primary-color: 212, 212, 212;
+  --text-secondary-color: 146, 146, 148;
+  --icon-color: 167, 167, 168;
+  --border-color: 58, 58, 61;
+}
+
+body {
+  background-color: rgb(var(--bg-secondary-color));
+}
