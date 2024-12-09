@@ -47,3 +47,18 @@ body {
 .option {
   @apply appearance-none bg-bg-primary-color text-sm text-text-secondary-color;
 }
+
+.scrollbar::-webkit-scrollbar {
+  height: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgb(var(--bg-primary-color));
+  border-radius: 4px;
+  background: rgb(var(--icon-color));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--accent-color));
+  border-radius: 4px;
+}

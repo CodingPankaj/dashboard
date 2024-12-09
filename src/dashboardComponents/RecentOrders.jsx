@@ -7,7 +7,7 @@ export const RecentOrders = () => {
     <div className="flex items-start justify-between gap-1 rounded bg-bg-primary-color shadow-md">
       <div className="flex w-full flex-col gap-1 text-text-secondary-color">
         <DashboardCardTop cardName="Recent Orders"></DashboardCardTop>
-        <div className="w-full overflow-x-scroll bg-bg-primary-color lg:overflow-hidden">
+        <div className="scrollbar w-full overflow-x-scroll bg-bg-primary-color 2xl:overflow-hidden">
           <table className="min-w-full table-fixed">
             <thead>
               <tr className="text-left text-sm font-semibold text-text-primary-color">

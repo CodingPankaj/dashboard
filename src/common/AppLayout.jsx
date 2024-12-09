@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { SideBar } from "./SideBar";
 import { Overlay } from "../components/Overlay";
+import { Footer } from "./Footer";
 
 export const AppLayout = () => {
   return (
@@ -11,6 +12,7 @@ export const AppLayout = () => {
         <div>
           <Header />
           <Outlet />
+          <Footer />
         </div>
       </section>
       <Overlay />
