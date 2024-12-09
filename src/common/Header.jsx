@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 export const Header = () => {
   return (
-    <header className="w-full border-b border-border-color bg-bg-primary-color px-3 py-3 md:px-5 md:py-4">
+    <header className="sticky top-0 z-20 flex h-[57px] w-full items-center border-b border-border-color bg-bg-primary-color px-3 py-3 md:h-[65px] md:px-5 md:py-4">
       <div className="flex w-full items-center justify-between gap-5">
         <SidebarToggleButton />
         <MobileMenuToggleButton />

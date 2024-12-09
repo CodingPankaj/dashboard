@@ -11,6 +11,7 @@
 :root[data-theme="light"] {
   --bg-primary-color: 255, 255, 255;
   --bg-secondary-color: 245, 246, 250;
+  --bg-color-3: 247, 248, 250;
   --text-primary-color: 34, 47, 54;
   --text-secondary-color: 151, 164, 194;
   --icon-color: 97, 116, 143;
@@ -21,6 +22,7 @@
 :root[data-theme="dark"] {
   --bg-primary-color: 35, 34, 38;
   --bg-secondary-color: 24, 23, 26;
+  --bg-color-3: 47, 46, 51;
   --text-primary-color: 212, 212, 212;
   --text-secondary-color: 146, 146, 148;
   --icon-color: 167, 167, 168;
@@ -29,4 +31,19 @@
 
 body {
   background-color: rgb(var(--bg-secondary-color));
+}
+
+.dashboard-btn-primary {
+  @apply flex items-center rounded border border-accent-color px-5 py-1 text-xs text-accent-color hover:bg-accent-color hover:text-text-primary-color;
+}
+.dashboard-btn-secondary {
+  @apply flex items-center rounded border border-accent-color bg-accent-color px-5 py-1 text-xs text-text-primary-color hover:bg-accent-color;
+}
+
+.select {
+  @apply relative appearance-none rounded border border-accent-color bg-transparent px-2 py-[2px] text-sm text-text-primary-color outline-none;
+}
+
+.option {
+  @apply appearance-none bg-bg-primary-color text-sm text-text-secondary-color;
 }

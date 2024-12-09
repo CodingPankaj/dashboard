@@ -1,0 +1,47 @@
+[
+    {
+        "orderID": "#ORD001",
+        "customerName": "Suman Kumar",
+        "customerEmail": "sumankumar209@gmail.com",
+        "orderDate": "Feb 22, 2024",
+        "totalAmount": "₹1,234.78",
+        "paymentStatus": "Paid",
+        "profilePic": "images/user1.jpg"
+    },
+    {
+        "orderID": "#ORD002",
+        "customerName": "Priya Patel",
+        "customerEmail": "priyapatel87@gmail.com",
+        "orderDate": "Mar 1, 2024",
+        "totalAmount": "₹2,567.42",
+        "paymentStatus": "Pending",
+        "profilePic": "images/user2.jpg"
+    },
+    {
+        "orderID": "#ORD003",
+        "customerName": "Rajesh Sharma",
+        "customerEmail": "rajesh.sharma98@yahoo.com",
+        "orderDate": "Mar 5, 2024",
+        "totalAmount": "₹879.65",
+        "paymentStatus": "Unpaid",
+        "profilePic": "images/user3.jpg"
+    },
+    {
+        "orderID": "#ORD004",
+        "customerName": "Tanya Gupta",
+        "customerEmail": "tanyagupta@gmail.com",
+        "orderDate": "Mar 7, 2024",
+        "totalAmount": "₹1,345.80",
+        "paymentStatus": "Paid",
+        "profilePic": "images/user4.jpg"
+    },
+    {
+        "orderID": "#ORD005",
+        "customerName": "Amit Singh",
+        "customerEmail": "amit.singh34@outlook.com",
+        "orderDate": "Mar 10, 2024",
+        "totalAmount": "₹2,003.45",
+        "paymentStatus": "Pending",
+        "profilePic": "images/user5.jpg"
+    }
+]

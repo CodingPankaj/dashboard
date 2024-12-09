@@ -23,7 +23,7 @@ export const MenuItems = ({ item: { icon, label, path, children } }) => {
         }
         to={path}
         className={({ isActive }) =>
-          `flex items-center gap-3 text-nowrap text-2xl text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color`
+          `flex items-center gap-3 text-nowrap text-2xl text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color hover:text-white`
         }
       >
         <span className="flex items-center justify-center rounded p-1">
