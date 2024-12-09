@@ -23,6 +23,24 @@ export const sideNav = [
     icon: <MdOutlineStore />,
     label: "Products",
     path: "/products",
+    children: [
+      {
+        label: "Sales",
+        path: "/products",
+      },
+      {
+        label: "CRM",
+        path: "/",
+      },
+      {
+        label: "Nice",
+        path: "/nice",
+      },
+      {
+        label: "Nice",
+        path: "/nice",
+      },
+    ],
   },
   {
     icon: <MdOutlineShoppingCart />,
