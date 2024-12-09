@@ -42,9 +42,9 @@ const RecentOrdersList = ({
   },
 }) => {
   const paymentStatusColor = () => {
-    if (paymentStatus.toLowerCase() === "paid") return "green";
-    if (paymentStatus.toLowerCase() === "pending") return "orange";
-    if (paymentStatus.toLowerCase() === "unpaid") return "red";
+    if (paymentStatus.toLowerCase() === "paid") return "34, 197, 94";
+    if (paymentStatus.toLowerCase() === "pending") return "250, 117, 22";
+    if (paymentStatus.toLowerCase() === "unpaid") return "239, 68, 68";
   };
 
   const statusColor = paymentStatusColor();
@@ -81,7 +81,11 @@ const RecentOrdersList = ({
       </td>
       <td className="px-4 py-2">
         <span
-          className={`rounded bg-${statusColor}-500/10 px-2 py-1 text-right text-xs text-${statusColor}-500`}
+          className="rounded px-2 py-1 text-right text-xs"
+          style={{
+            backgroundColor: `rgba(${statusColor},0.10)`,
+            color: `rgb(${statusColor})`,
+          }}
         >
           {paymentStatus}
         </span>
