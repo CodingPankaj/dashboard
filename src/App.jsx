@@ -12,6 +12,9 @@ import { Categories } from "./pages/Categories";
 import { Analytics } from "./pages/Analytics";
 import { Notifications } from "./pages/Notifications";
 import { HelpCenter } from "./pages/HelpCenter";
+import { Sales } from "./pages/Sales";
+import { Crm } from "./pages/Crm";
+import { AllOrders } from "./pages/AllOrders";
 
 const allRoutes = createBrowserRouter([
   {
@@ -69,6 +72,18 @@ const allRoutes = createBrowserRouter([
       {
         path: "/help-center",
         element: <HelpCenter />,
+      },
+      {
+        path: "/products/sales",
+        element: <Sales />,
+      },
+      {
+        path: "/products/crm",
+        element: <Crm />,
+      },
+      {
+        path: "/orders/all",
+        element: <AllOrders />,
       },
     ],
   },

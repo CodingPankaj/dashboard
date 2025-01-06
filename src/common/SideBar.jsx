@@ -1,9 +1,9 @@
-import { sideNav } from "../data/sideNav";
 import { useContext } from "react";
 import { MainContext } from "../context/MainContext";
 import { GiShoppingBag } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { MenuItems } from "../sidebarComponents/MenuItems";
+
+import { SidebarMenu } from "../components/sidebarComponents/SidebarMenu";
 
 export const SideBar = () => {
   const { isSidebarExpanded, isMobileMenuOpen, toggleMobileMenu } =
@@ -24,13 +24,7 @@ export const SideBar = () => {
           <IoCloseSharp />
         </button>
       </div>
-      <nav className="h-full grow overflow-hidden px-3">
-        <ul className="flex flex-col items-start gap-4 overflow-hidden">
-          {sideNav.map((item, index) => (
-            <MenuItems item={item} key={index} />
-          ))}
-        </ul>
-      </nav>
+      <SidebarMenu />
     </div>
   );
 };

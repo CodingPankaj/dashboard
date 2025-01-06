@@ -62,3 +62,7 @@ body {
   background-color: rgb(var(--accent-color));
   border-radius: 4px;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
