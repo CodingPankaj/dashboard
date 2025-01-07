@@ -7,7 +7,8 @@ export const Footer = () => {
   return (
     <div className="flex items-center justify-center border-t border-border-color bg-bg-primary-color px-3 py-3 md:py-5">
       <p className="w-fit items-center gap-1 text-center text-sm text-text-secondary-color">
-        Copyright © {currentYear} <span className="text-white">Dashboard</span>
+        Copyright © {currentYear}{" "}
+        <span className="text-text-color-3">Dashboard</span>
         . Designed with <IoMdHeart className="inline text-base text-red-500" />{" "}
         by{" "}
         <Link

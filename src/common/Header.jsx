@@ -14,7 +14,7 @@ export const Header = () => {
           <MdNotificationsNone className="text-2xl text-text-secondary-color" />
           <figure className="h-8 w-8 rounded-full">
             <img
-              src="images/dp.jpg"
+              src="/images/dp.jpg"
               alt="profile"
               className="h-full w-full rounded-full"
             />

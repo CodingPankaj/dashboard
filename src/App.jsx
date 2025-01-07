@@ -15,6 +15,7 @@ import { HelpCenter } from "./pages/HelpCenter";
 import { Sales } from "./pages/Sales";
 import { Crm } from "./pages/Crm";
 import { AllOrders } from "./pages/AllOrders";
+import { Error } from "./pages/Error";
 
 const allRoutes = createBrowserRouter([
   {
@@ -74,6 +75,10 @@ const allRoutes = createBrowserRouter([
         element: <HelpCenter />,
       },
       {
+        path: "/products/all",
+        element: <Products />,
+      },
+      {
         path: "/products/sales",
         element: <Sales />,
       },
@@ -83,9 +88,13 @@ const allRoutes = createBrowserRouter([
       },
       {
         path: "/orders/all",
-        element: <AllOrders />,
+        element: <Orders />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
 

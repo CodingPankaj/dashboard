@@ -25,6 +25,10 @@ export const sideNav = [
     path: "/products",
     children: [
       {
+        label: "All Products",
+        path: "/products/all",
+      },
+      {
         label: "Sales",
         path: "/products/sales",
       },

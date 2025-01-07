@@ -1,15 +1,16 @@
-import { OrderSummary } from "../dashboardComponents/OrderSummary";
-import { RecentOrders } from "../dashboardComponents/RecentOrders";
-import { RevenueCard } from "../dashboardComponents/RevenueCard";
-import { TopSellingProducts } from "../dashboardComponents/TopSellingProducts";
-import { TotalOrders } from "../dashboardComponents/TotalOrders";
-import { TotalProducts } from "../dashboardComponents/TotalProducts";
-import { TotalSales } from "../dashboardComponents/TotalSales";
-import { TotalVisitors } from "../dashboardComponents/TotalVisitors";
+import { OrderSummary } from "../components/dashboardComponents/OrderSummary";
+import { RecentOrders } from "../components/dashboardComponents/RecentOrders";
+import { RevenueCard } from "../components/dashboardComponents/RevenueCard";
+import { TopSellingProducts } from "../components/dashboardComponents/TopSellingProducts";
+import { TotalOrders } from "../components/dashboardComponents/TotalOrders";
+import { TotalProducts } from "../components/dashboardComponents/TotalProducts";
+import { TotalSales } from "../components/dashboardComponents/TotalSales";
+import { TotalVisitors } from "../components/dashboardComponents/TotalVisitors";
+import { MainSection } from "../components/MainSection";
 
 export const Dashboard = () => {
   return (
-    <section className="flex flex-col gap-5 px-3 py-6 md:px-5">
+    <MainSection>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
         <TotalOrders />
         <TotalSales />
@@ -24,6 +25,6 @@ export const Dashboard = () => {
         <OrderSummary />
         <RecentOrders />
       </div>
-    </section>
+    </MainSection>
   );
 };

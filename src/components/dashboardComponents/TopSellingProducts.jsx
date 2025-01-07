@@ -1,20 +1,19 @@
-import topSellingProducts from "../api/topSellingProducts.json";
-import { DashboardCardTop } from "../components/DashboardCardTop";
+import topSellingProducts from "../../api/topSellingProducts.json";
+import { DashboardCardTop } from "../DashboardCardTop";
+import { MainCardContainer } from "../MainCardCointainer";
 
 export const TopSellingProducts = () => {
   return (
-    <div className="flex items-start justify-between gap-1 rounded bg-bg-primary-color shadow-md">
-      <div className="flex w-full flex-col gap-1 text-text-secondary-color">
-        <DashboardCardTop cardName="Top Selling Products" />
-        <div className="w-full">
-          <ul className="flex flex-col gap-3 p-3">
-            {topSellingProducts.map((item, index) => (
-              <TopSellingProductList key={index} item={item} />
-            ))}
-          </ul>
-        </div>
+    <MainCardContainer>
+      <DashboardCardTop cardName="Top Selling Products" />
+      <div className="w-full">
+        <ul className="flex flex-col gap-3 p-3">
+          {topSellingProducts.map((item, index) => (
+            <TopSellingProductList key={index} item={item} />
+          ))}
+        </ul>
       </div>
-    </div>
+    </MainCardContainer>
   );
 };
 

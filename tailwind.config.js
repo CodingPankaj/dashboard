@@ -9,6 +9,7 @@ export default {
         "bg-color-3": "rgba(var(--bg-color-3))",
         "text-primary-color": "rgba(var(--text-primary-color))",
         "text-secondary-color": "rgba(var(--text-secondary-color))",
+        "text-color-3": "rgba(var(--text-color-3))",
         "accent-color": "rgba(var(--accent-color))",
         "border-color": "rgba(var(--border-color))",
       },
