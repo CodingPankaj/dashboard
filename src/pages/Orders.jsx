@@ -6,63 +6,65 @@ import { useEffect, useState } from "react";
 import { MainSection } from "../components/MainSection";
 import { SelectBoxOptions } from "../components/SelectBoxOptions";
 import { SelectBox } from "../components/SelectBox";
+import { useLocation } from "react-router-dom";
 
 export const Orders = () => {
-  const [paymentStatus, setPayemntStatus] = useState(recentOrders);
-  const [filterPaymentStatus, setFilterPaymentStatus] = useState("ALL");
+  const [orderData, setOrderData] = useState(recentOrders);
+  const [paymentFIlterData, setPaymentFilterData] = useState(orderData);
 
-  const filterPayments = () => {
-    if (filterPaymentStatus === "all") {
-      setPayemntStatus(recentOrders);
-    }
-    if (filterPaymentStatus === "paid") {
-      setPayemntStatus(
+  const orderPageLocation = useLocation()
+    .pathname.split("/")
+    .pop()
+    .toLocaleLowerCase();
+
+  const renderData = (location) => {
+    if (location === "all") {
+      setOrderData(recentOrders);
+    } else {
+      setOrderData(
         recentOrders.filter(
-          (item) => item.paymentStatus.toLowerCase() === "paid",
-        ),
-      );
-    }
-    if (filterPaymentStatus === "unpaid") {
-      setPayemntStatus(
-        recentOrders.filter(
-          (item) => item.paymentStatus.toLowerCase() === "unpaid",
-        ),
-      );
-    }
-    if (filterPaymentStatus === "failed") {
-      setPayemntStatus(
-        recentOrders.filter(
-          (item) => item.paymentStatus.toLowerCase() === "failed",
-        ),
-      );
-    }
-    if (filterPaymentStatus === "refunded") {
-      setPayemntStatus(
-        recentOrders.filter(
-          (item) => item.paymentStatus.toLowerCase() === "refunded",
+          (item) => item.orderStatus.toLowerCase() === location,
         ),
       );
     }
   };
 
   useEffect(() => {
-    filterPayments();
-  }, [filterPaymentStatus]);
+    setPaymentFilterData(orderData);
+  }, [orderData]);
+
+  useEffect(() => {
+    renderData(orderPageLocation);
+  }, [orderPageLocation]);
+
+  const handlePaymentStatusChange = (status) => {
+    if (status === "all") {
+      setPaymentFilterData(orderData);
+    } else {
+      setPaymentFilterData(
+        orderData.filter((item) => item.paymentStatus.toLowerCase() === status),
+      );
+    }
+  };
 
   return (
     <MainSection>
-      <p className="text-gray-500">hello</p>
       <MainCardContainer>
-        <DashboardCardTop cardName="All Orders">
-          <SelectBox onChange={(e) => setFilterPaymentStatus(e.target.value)}>
-            <SelectBoxOptions value="all" label="All" />
-            <SelectBoxOptions value="paid" label="Paid" />
-            <SelectBoxOptions value="unpaid" label="UnPaid" />
-            <SelectBoxOptions value="failed" label="Failed" />
-            <SelectBoxOptions value="refunded" label="Refunded" />
-          </SelectBox>
+        <DashboardCardTop cardName="Orders">
+          <div className="flex flex-wrap gap-4">
+            <SelectBox
+              onChange={(e) => handlePaymentStatusChange(e.target.value)}
+              name="payment-status"
+            >
+              <SelectBoxOptions value="all" label="All Payments" />
+              <SelectBoxOptions value="paid" label="Paid" />
+              <SelectBoxOptions value="unpaid" label="UnPaid" />
+              <SelectBoxOptions value="failed" label="Failed" />
+              <SelectBoxOptions value="refunded" label="Refunded" />
+            </SelectBox>
+          </div>
         </DashboardCardTop>
-        <OrderTable data={paymentStatus} />
+        <OrderTable data={paymentFIlterData} />
       </MainCardContainer>
     </MainSection>
   );

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const OrderTable = ({ data }) => {
   return (
-    <div className="scrollbar w-full overflow-x-auto bg-bg-primary-color">
+    <div className="scrollbar grid w-full grid-cols-1 overflow-x-auto bg-bg-primary-color">
       <table className="min-w-full table-fixed">
         <thead>
           <tr className="text-left text-sm font-semibold text-text-primary-color">
@@ -36,6 +36,7 @@ const RecentOrdersList = ({
     orderDate,
     totalAmount,
     paymentStatus,
+    orderStatus,
     profilePic,
   },
 }) => {
@@ -46,7 +47,17 @@ const RecentOrdersList = ({
     if (paymentStatus.toLowerCase() === "refunded") return "20, 184, 166";
   };
 
-  const statusColor = paymentStatusColor();
+  const orderStatusColor = () => {
+    if (orderStatus.toLowerCase() === "pending") return "250, 117, 22"; //
+    if (orderStatus.toLowerCase() === "processing") return "20, 184, 166";
+    if (orderStatus.toLowerCase() === "shipped") return "114, 92, 255"; //
+    if (orderStatus.toLowerCase() === "delivered") return "34, 197, 94"; //
+    if (orderStatus.toLowerCase() === "cancelled") return "239, 68, 68"; //
+    if (orderStatus.toLowerCase() === "returned") return "20, 184, 166"; //
+  };
+
+  const pStatusColor = paymentStatusColor();
+  const oStatusColor = orderStatusColor();
 
   return (
     <tr className="border-t border-border-color">
@@ -82,8 +93,8 @@ const RecentOrdersList = ({
         <div
           className="w-fit rounded px-2 py-1 text-center text-xs"
           style={{
-            backgroundColor: `rgba(${statusColor},0.10)`,
-            color: `rgb(${statusColor})`,
+            backgroundColor: `rgba(${pStatusColor},0.10)`,
+            color: `rgb(${pStatusColor})`,
           }}
         >
           {paymentStatus}
@@ -93,11 +104,11 @@ const RecentOrdersList = ({
         <div
           className="w-fit rounded px-2 py-1 text-center text-xs"
           style={{
-            backgroundColor: `rgba(${statusColor},0.10)`,
-            color: `rgb(${statusColor})`,
+            backgroundColor: `rgba(${oStatusColor},0.10)`,
+            color: `rgb(${oStatusColor})`,
           }}
         >
-          order Status
+          {orderStatus}
         </div>
       </td>
       <td className="px-4 py-2">

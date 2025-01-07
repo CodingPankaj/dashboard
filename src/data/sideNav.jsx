@@ -60,12 +60,24 @@ export const sideNav = [
         path: "/orders/pending",
       },
       {
-        label: "Completed Orders",
-        path: "/orders/completed",
+        label: "Processing Orders",
+        path: "/orders/processing",
+      },
+      {
+        label: "Shipped Orders",
+        path: "/orders/shipped",
+      },
+      {
+        label: "Delivered Orders",
+        path: "/orders/delivered",
       },
       {
         label: "Cancelled Orders",
         path: "/orders/cancelled",
+      },
+      {
+        label: "Returned Orders",
+        path: "/orders/returned",
       },
     ],
   },

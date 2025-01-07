@@ -45,7 +45,7 @@ body {
 }
 
 .select {
-  @apply relative appearance-none rounded border border-accent-color bg-transparent px-2 py-[2px] text-sm text-text-primary-color outline-none;
+  @apply relative w-fit appearance-none rounded border border-accent-color bg-transparent py-[2px] pl-2 pr-8 text-sm text-text-primary-color outline-none;
 }
 
 .option {
@@ -65,6 +65,7 @@ body {
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: rgb(var(--accent-color));
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
