@@ -1,11 +1,11 @@
 import topSellingProducts from "../../api/topSellingProducts.json";
-import { DashboardCardTop } from "../DashboardCardTop";
+import { CardTop } from "../CardTop";
 import { MainCardContainer } from "../MainCardCointainer";
 
 export const TopSellingProducts = () => {
   return (
     <MainCardContainer>
-      <DashboardCardTop cardName="Top Selling Products" />
+      <CardTop heading="Top Selling Products" />
       <div className="w-full">
         <ul className="flex flex-col gap-3 p-3">
           {topSellingProducts.map((item, index) => (

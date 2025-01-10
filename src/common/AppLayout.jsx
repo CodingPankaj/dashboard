@@ -9,7 +9,7 @@ export const AppLayout = () => {
     <>
       <section className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
         <SideBar />
-        <div>
+        <div className="flex min-h-dvh flex-col">
           <Header />
           <Outlet />
           <Footer />

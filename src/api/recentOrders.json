@@ -4,7 +4,7 @@
         "customerName": "Suman Kumar",
         "customerEmail": "sumankumar209@gmail.com",
         "orderDate": "Feb 22, 2024",
-        "totalAmount": "₹1,234.78",
+        "totalAmount": "1234.78",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user4.jpg"
@@ -14,7 +14,7 @@
         "customerName": "Priya Patel",
         "customerEmail": "priyapatel87@gmail.com",
         "orderDate": "Mar 1, 2024",
-        "totalAmount": "₹2,567.42",
+        "totalAmount": "2567.42",
         "paymentStatus": "Unpaid",
         "orderStatus": "Processing",
         "profilePic": "/images/user1.jpg"
@@ -24,7 +24,7 @@
         "customerName": "Rajesh Sharma",
         "customerEmail": "rajesh.sharma98@yahoo.com",
         "orderDate": "Mar 5, 2024",
-        "totalAmount": "₹879.65",
+        "totalAmount": "879.65",
         "paymentStatus": "Failed",
         "orderStatus": "Pending",
         "profilePic": "/images/user3.jpg"
@@ -34,7 +34,7 @@
         "customerName": "Tanya Gupta",
         "customerEmail": "tanyagupta@gmail.com",
         "orderDate": "Mar 7, 2024",
-        "totalAmount": "₹1,345.80",
+        "totalAmount": "1345.80",
         "paymentStatus": "Refunded",
         "orderStatus": "Shipped",
         "profilePic": "/images/user5.jpg"
@@ -44,7 +44,7 @@
         "customerName": "Amit Singh",
         "customerEmail": "amit.singh34@outlook.com",
         "orderDate": "Mar 10, 2024",
-        "totalAmount": "₹2,003.45",
+        "totalAmount": "2003.45",
         "paymentStatus": "Failed",
         "orderStatus": "Cancelled",
         "profilePic": "/images/user2.jpg"
@@ -54,7 +54,7 @@
         "customerName": "Neha Kapoor",
         "customerEmail": "neha.kapoor91@gmail.com",
         "orderDate": "Mar 12, 2024",
-        "totalAmount": "₹980.00",
+        "totalAmount": "980.00",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user1.jpg"
@@ -64,7 +64,7 @@
         "customerName": "Arjun Mehta",
         "customerEmail": "arjun.mehta87@gmail.com",
         "orderDate": "Mar 14, 2024",
-        "totalAmount": "₹1,150.25",
+        "totalAmount": "1150.25",
         "paymentStatus": "Unpaid",
         "orderStatus": "Cancelled",
         "profilePic": "/images/user4.jpg"
@@ -74,7 +74,7 @@
         "customerName": "Riya Das",
         "customerEmail": "riya.das90@gmail.com",
         "orderDate": "Mar 16, 2024",
-        "totalAmount": "₹1,732.56",
+        "totalAmount": "1732.56",
         "paymentStatus": "Paid",
         "orderStatus": "Shipped",
         "profilePic": "/images/user3.jpg"
@@ -84,7 +84,7 @@
         "customerName": "Karan Malhotra",
         "customerEmail": "karan.malhotra@gmail.com",
         "orderDate": "Mar 18, 2024",
-        "totalAmount": "₹2,345.67",
+        "totalAmount": "2345.67",
         "paymentStatus": "Refunded",
         "orderStatus": "Returned",
         "profilePic": "/images/user5.jpg"
@@ -94,7 +94,7 @@
         "customerName": "Simran Kaur",
         "customerEmail": "simran.kaur@gmail.com",
         "orderDate": "Mar 20, 2024",
-        "totalAmount": "₹1,450.00",
+        "totalAmount": "1450.00",
         "paymentStatus": "Failed",
         "orderStatus": "Cancelled",
         "profilePic": "/images/user2.jpg"
@@ -104,7 +104,7 @@
         "customerName": "Vikram Chauhan",
         "customerEmail": "vikram.chauhan@gmail.com",
         "orderDate": "Mar 22, 2024",
-        "totalAmount": "₹1,800.10",
+        "totalAmount": "1800.10",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user1.jpg"
@@ -114,7 +114,7 @@
         "customerName": "Sneha Reddy",
         "customerEmail": "sneha.reddy@gmail.com",
         "orderDate": "Mar 24, 2024",
-        "totalAmount": "₹1,100.50",
+        "totalAmount": "1100.50",
         "paymentStatus": "Unpaid",
         "orderStatus": "Processing",
         "profilePic": "/images/user4.jpg"
@@ -124,7 +124,7 @@
         "customerName": "Rahul Verma",
         "customerEmail": "rahul.verma@gmail.com",
         "orderDate": "Mar 26, 2024",
-        "totalAmount": "₹1,250.00",
+        "totalAmount": "1250",
         "paymentStatus": "Failed",
         "orderStatus": "Pending",
         "profilePic": "/images/user3.jpg"
@@ -134,7 +134,7 @@
         "customerName": "Pooja Agarwal",
         "customerEmail": "pooja.agarwal@gmail.com",
         "orderDate": "Mar 28, 2024",
-        "totalAmount": "₹950.30",
+        "totalAmount": "950.30",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user2.jpg"
@@ -144,7 +144,7 @@
         "customerName": "Manoj Nair",
         "customerEmail": "manoj.nair@gmail.com",
         "orderDate": "Mar 30, 2024",
-        "totalAmount": "₹1,900.00",
+        "totalAmount": "1900",
         "paymentStatus": "Paid",
         "orderStatus": "Shipped",
         "profilePic": "/images/user5.jpg"
@@ -154,7 +154,7 @@
         "customerName": "Ayesha Khan",
         "customerEmail": "ayesha.khan@gmail.com",
         "orderDate": "Apr 1, 2024",
-        "totalAmount": "₹2,100.45",
+        "totalAmount": "2100.45",
         "paymentStatus": "Unpaid",
         "orderStatus": "Processing",
         "profilePic": "/images/user4.jpg"
@@ -164,7 +164,7 @@
         "customerName": "Ravi Shukla",
         "customerEmail": "ravi.shukla@gmail.com",
         "orderDate": "Apr 3, 2024",
-        "totalAmount": "₹1,670.50",
+        "totalAmount": "1670.50",
         "paymentStatus": "Refunded",
         "orderStatus": "Cancelled",
         "profilePic": "/images/user1.jpg"
@@ -174,7 +174,7 @@
         "customerName": "Meera Jain",
         "customerEmail": "meera.jain@gmail.com",
         "orderDate": "Apr 5, 2024",
-        "totalAmount": "₹2,300.60",
+        "totalAmount": "2300.60",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user3.jpg"
@@ -184,7 +184,7 @@
         "customerName": "Ankit Tiwari",
         "customerEmail": "ankit.tiwari@gmail.com",
         "orderDate": "Apr 7, 2024",
-        "totalAmount": "₹1,350.25",
+        "totalAmount": "1350.25",
         "paymentStatus": "Paid",
         "orderStatus": "Shipped",
         "profilePic": "/images/user2.jpg"
@@ -194,7 +194,7 @@
         "customerName": "Kavita Mishra",
         "customerEmail": "kavita.mishra@gmail.com",
         "orderDate": "Apr 9, 2024",
-        "totalAmount": "₹1,750.75",
+        "totalAmount": "1750.75",
         "paymentStatus": "Paid",
         "orderStatus": "Delivered",
         "profilePic": "/images/user4.jpg"

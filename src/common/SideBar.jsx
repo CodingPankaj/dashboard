@@ -2,8 +2,7 @@ import { useContext } from "react";
 import { MainContext } from "../context/MainContext";
 import { GiShoppingBag } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-
-import { SidebarMenu } from "../components/sidebarComponents/SidebarMenu";
+import { SidebarMenu } from "../components/sidebar/SidebarMenu";
 
 export const SideBar = () => {
   const { isSidebarExpanded, isMobileMenuOpen, toggleMobileMenu } =

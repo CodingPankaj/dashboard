@@ -29,18 +29,6 @@ export const sideNav = [
         path: "/products/all",
       },
       {
-        label: "Sales",
-        path: "/products/sales",
-      },
-      {
-        label: "CRM",
-        path: "/products/crm",
-      },
-      {
-        label: "Inventory",
-        path: "/products/inventory",
-      },
-      {
         label: "Add Product",
         path: "/products/add",
       },

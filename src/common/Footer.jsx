@@ -5,7 +5,7 @@ export const Footer = () => {
   const now = new Date();
   const currentYear = now.getFullYear();
   return (
-    <div className="flex items-center justify-center border-t border-border-color bg-bg-primary-color px-3 py-3 md:py-5">
+    <footer className="mt-auto flex items-center justify-center border-t border-border-color bg-bg-primary-color px-3 py-3 md:py-5">
       <p className="w-fit items-center gap-1 text-center text-sm text-text-secondary-color">
         Copyright © {currentYear}{" "}
         <span className="text-text-color-3">Dashboard</span>
@@ -20,6 +20,6 @@ export const Footer = () => {
         </Link>{" "}
         All rights reserved.
       </p>
-    </div>
+    </footer>
   );
 };

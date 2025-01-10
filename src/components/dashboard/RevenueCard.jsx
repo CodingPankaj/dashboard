@@ -13,22 +13,22 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { DashboardCardTop } from "../DashboardCardTop";
 import { SelectBox } from "../SelectBox";
 import { SelectBoxOptions } from "../SelectBoxOptions";
 import { MainCardContainer } from "../MainCardCointainer";
+import { CardTop } from "../CardTop";
 
 export const RevenueCard = () => {
   return (
     <MainCardContainer>
-      <DashboardCardTop cardName="Revenue Overview">
+      <CardTop heading="Revenue Overview">
         <SelectBox>
           <SelectBoxOptions value="Today" label="Today" />
           <SelectBoxOptions value="1 Month" label="1 Month" />
           <SelectBoxOptions value="6 Months" label="6 Months" />
           <SelectBoxOptions value="1 Year" label="1 Year" />
         </SelectBox>
-      </DashboardCardTop>
+      </CardTop>
 
       <div className="flex flex-wrap gap-2 p-3 md:gap-5">
         <h4 className="flex grow flex-col gap-1 rounded border border-dashed border-border-color bg-bg-color-3 p-4 text-center text-xs font-medium text-text-primary-color">

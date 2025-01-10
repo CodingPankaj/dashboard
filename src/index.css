@@ -13,11 +13,14 @@
   --bg-primary-color: 255, 255, 255;
   --bg-secondary-color: 245, 246, 250;
   --bg-color-3: 247, 248, 250;
+  --bg-light-color: 247, 248, 250;
   --text-primary-color: 34, 47, 54;
   --text-secondary-color: 151, 164, 194;
   --text-color-3: 10, 10, 10;
+  --text-color-4: 34, 47, 54;
   --icon-color: 97, 116, 143;
   --border-color: 230, 240, 242;
+  --border-color-2: 244, 242, 250;
 }
 
 /* Dark Mode Colors */
@@ -25,11 +28,14 @@
   --bg-primary-color: 35, 34, 38;
   --bg-secondary-color: 24, 23, 26;
   --bg-color-3: 47, 46, 51;
+  --bg-light-color: 46, 45, 50;
   --text-primary-color: 212, 212, 212;
   --text-secondary-color: 146, 146, 148;
   --text-color-3: 240, 245, 248;
+  --text-color-4: 214, 214, 214;
   --icon-color: 167, 167, 168;
   --border-color: 58, 58, 61;
+  --border-color-2: 61, 60, 64;
 }
 
 body {
@@ -70,4 +76,12 @@ body {
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
+}
+
+.chkbox {
+  @apply size-[14px] cursor-pointer appearance-none rounded border border-border-color;
+}
+
+.chkbox:checked {
+  @apply bg-accent-color bg-[url('/images/tick.svg')] bg-center;
 }

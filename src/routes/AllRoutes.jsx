@@ -6,8 +6,9 @@ import { Orders } from "../pages/Orders";
 import { Customers } from "../pages/Customers";
 import { Payments } from "../pages/Payments";
 import { Reports } from "../pages/Reports";
-import { Settings } from "../pages/Settings";
 import { Error } from "../pages/Error";
+import { OrderDetails } from "../pages/OrderDetails";
+import { AddProducts } from "../pages/AddProducts";
 
 export const AllRoutes = createBrowserRouter([
   {
@@ -20,7 +21,15 @@ export const AllRoutes = createBrowserRouter([
       },
       {
         path: "/products",
+        element: <AddProducts />,
+      },
+      {
+        path: "/products/all",
         element: <Products />,
+      },
+      {
+        path: "/products/add",
+        element: <AddProducts />,
       },
       {
         path: "/orders",
@@ -35,6 +44,7 @@ export const AllRoutes = createBrowserRouter([
           { path: "returned", element: <Orders /> },
         ],
       },
+      { path: "/orders/order-details", element: <OrderDetails /> },
       {
         path: "/customers",
         element: <Customers />,
