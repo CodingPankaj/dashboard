@@ -30,12 +30,12 @@ export const MenuItems = ({
           onClick={() =>
             setOpenMenuIndex(openMenuIndex === index ? null : index)
           }
-          className={`flex items-center gap-3 text-nowrap text-2xl text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full cursor-pointer overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color hover:text-white`}
+          className={`flex items-center gap-1 text-nowrap text-[14.5px] text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full cursor-pointer overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color hover:text-white`}
         >
-          <span className="flex items-center justify-center rounded p-1">
+          <span className="flex min-w-[32px] items-center justify-center rounded p-1 text-xl">
             {icon}
           </span>
-          <span className="leading-0 flex w-full grow items-center justify-between gap-2 pr-2 text-lg">
+          <span className="leading-0 flex w-full grow items-center justify-between gap-2 pr-2">
             {label}
 
             <MdOutlineChevronRight
@@ -48,13 +48,13 @@ export const MenuItems = ({
           onClick={handleMenuClickInMobile}
           to={path}
           className={({ isActive }) =>
-            `flex items-center gap-3 text-nowrap text-2xl text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color hover:text-white`
+            `flex items-center gap-1 text-nowrap text-[14.5px] text-text-primary-color ${isActive ? "bg-accent-color text-white" : "bg-transparent"} w-full overflow-hidden rounded px-1 py-1 transition-all duration-300 hover:bg-accent-color hover:text-white`
           }
         >
-          <span className="flex items-center justify-center rounded p-1">
+          <span className="flex min-w-[32px] items-center justify-center rounded p-1 text-xl">
             {icon}
           </span>
-          <span className="leading-0 flex w-full grow items-center justify-between gap-2 pr-2 text-lg">
+          <span className="leading-0 flex w-full grow items-center justify-between gap-2 pr-2">
             {label}
           </span>
         </NavLink>

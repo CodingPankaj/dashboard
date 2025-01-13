@@ -1,4 +1,3 @@
-import { Accordion } from "../Accordion";
 import { MenuItems } from "./MenuItems";
 import { sideNav } from "../../data/sideNav";
 import { useState } from "react";
@@ -8,7 +7,6 @@ export const SidebarMenu = () => {
   return (
     <nav className="scrollbar-hidden h-full grow overflow-y-scroll px-3">
       <ul className="flex flex-col items-start gap-4 overflow-hidden">
-        <Accordion />
         {sideNav.map((item, index) => (
           <MenuItems
             item={item}

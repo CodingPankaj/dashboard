@@ -4,7 +4,7 @@ export const LinkBtnOne = ({ to, children }) => {
   return (
     <Link
       to={to}
-      className="flex items-center gap-[5px] rounded bg-accent-color px-[10px] py-[5px] text-[13px] font-medium text-white"
+      className="flex items-center gap-[5px] rounded border border-accent-color bg-accent-color px-[10px] py-[5px] text-[13px] font-medium text-white"
     >
       {children}
     </Link>

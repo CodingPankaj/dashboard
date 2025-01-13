@@ -18,6 +18,7 @@ export default {
         "accent-color": "rgba(var(--accent-color))",
         "border-color": "rgba(var(--border-color))",
         "border-color-2": "rgba(var(--border-color-2))",
+        "border-color-3": "rgba(var(--border-color-3))",
       },
     },
   },
