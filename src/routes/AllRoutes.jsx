@@ -9,6 +9,10 @@ import { Reports } from "../pages/Reports";
 import { Error } from "../pages/Error";
 import { OrderDetails } from "../pages/OrderDetails";
 import { AddProducts } from "../pages/AddProducts";
+import { SignIn } from "../pages/SignIn";
+import { Categories } from "../pages/Categories";
+import { Size } from "../pages/Size";
+import { Color } from "../pages/Color";
 
 export const AllRoutes = createBrowserRouter([
   {
@@ -46,6 +50,31 @@ export const AllRoutes = createBrowserRouter([
       },
       { path: "/orders/order-details", element: <OrderDetails /> },
       {
+        path: "/categories",
+        element: <Categories />,
+        children: [
+          { path: "all", element: <Categories /> },
+          { path: "parent-category", element: <Categories /> },
+          { path: "sub-category", element: <Categories /> },
+        ],
+      },
+      {
+        path: "/size",
+        element: <Size />,
+        children: [
+          { path: "all", element: <Size /> },
+          { path: "add", element: <Size /> },
+        ],
+      },
+      {
+        path: "/color",
+        element: <Color />,
+        children: [
+          { path: "all", element: <Color /> },
+          { path: "add", element: <Color /> },
+        ],
+      },
+      {
         path: "/customers",
         element: <Customers />,
       },
@@ -58,6 +87,10 @@ export const AllRoutes = createBrowserRouter([
         element: <Reports />,
       },
     ],
+  },
+  {
+    path: "/sign-in",
+    element: <SignIn />,
   },
   {
     path: "*",

@@ -22,7 +22,7 @@ export const RevenueCard = () => {
   return (
     <MainCardContainer>
       <CardTop heading="Revenue Overview">
-        <SelectBox>
+        <SelectBox id="revenue-sort">
           <SelectBoxOptions value="Today" label="Today" />
           <SelectBoxOptions value="1 Month" label="1 Month" />
           <SelectBoxOptions value="6 Months" label="6 Months" />

@@ -1,3 +1,5 @@
+import { GiPencilRuler } from "react-icons/gi";
+import { IoColorPaletteOutline } from "react-icons/io5";
 import {
   MdOutlineAttachMoney,
   MdOutlineCategory,
@@ -70,21 +72,70 @@ export const sideNav = [
     ],
   },
   {
-    icon: <MdOutlinePeople />,
-    label: "Customers",
-    path: "/customers",
+    icon: <MdOutlineCategory />,
+    label: "Categories",
+    path: "/categories",
     children: [
       {
-        label: "All Customers",
-        path: "/customers/all",
+        label: "All Categories",
+        path: "/categories/all",
       },
       {
-        label: "VIP Customers",
-        path: "/customers/vip",
+        label: "Parent Category",
+        path: "/categories/parent-category",
       },
       {
-        label: "Customer Groups",
-        path: "/customers/groups",
+        label: "Sub Category",
+        path: "/categories/sub-category",
+      },
+    ],
+  },
+  {
+    icon: <GiPencilRuler />,
+    label: "Size",
+    path: "/size",
+    children: [
+      {
+        label: "All Size",
+        path: "/size/all",
+      },
+      {
+        label: "Add Size",
+        path: "/size/add",
+      },
+    ],
+  },
+  {
+    icon: <IoColorPaletteOutline />,
+    label: "Color",
+    path: "/color",
+    children: [
+      {
+        label: "All Color",
+        path: "/color/all",
+      },
+      {
+        label: "Add Color",
+        path: "/color/add",
+      },
+    ],
+  },
+  {
+    icon: <MdOutlinePeople />,
+    label: "Users",
+    path: "/users",
+    children: [
+      {
+        label: "All Users",
+        path: "/users/all",
+      },
+      {
+        label: "Admin",
+        path: "/user/admin",
+      },
+      {
+        label: "Customer",
+        path: "/users/customer",
       },
     ],
   },
@@ -153,25 +204,7 @@ export const sideNav = [
       },
     ],
   },
-  {
-    icon: <MdOutlineCategory />,
-    label: "Categories",
-    path: "/categories",
-    children: [
-      {
-        label: "All Categories",
-        path: "/categories/all",
-      },
-      {
-        label: "Add New Category",
-        path: "/categories/add",
-      },
-      {
-        label: "Category Management",
-        path: "/categories/manage",
-      },
-    ],
-  },
+
   {
     icon: <MdOutlineTrendingUp />,
     label: "Analytics",
@@ -232,6 +265,6 @@ export const sideNav = [
   {
     icon: <MdOutlineExitToApp />,
     label: "Logout",
-    path: "/logout",
+    path: "/sign-in",
   },
 ];

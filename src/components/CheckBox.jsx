@@ -1,3 +1,3 @@
-export const CheckBox = () => {
-  return <input type="checkbox" name="l" id="" className="chkbox" />;
+export const CheckBox = ({ ...props }) => {
+  return <input type="checkbox" {...props} className="chkbox" />;
 };

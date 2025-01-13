@@ -16,7 +16,7 @@ export const Orders = () => {
   const orderPageLocation = useLocation()
     .pathname.split("/")
     .pop()
-    .toLocaleLowerCase();
+    .toLowerCase();
 
   const renderData = (location) => {
     if (location === "all") {

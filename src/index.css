@@ -45,6 +45,10 @@ body {
   font-family: "Quicksand", serif;
 }
 
+.background-color {
+  background-color: rgb(var(--bg-primary-color));
+}
+
 .dashboard-btn-primary {
   @apply flex items-center rounded border border-accent-color px-5 py-1 text-xs text-accent-color hover:bg-accent-color hover:text-text-primary-color;
 }
