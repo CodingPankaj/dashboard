@@ -1,8 +1,36 @@
 import { MdClose } from "react-icons/md";
 import { CardTop } from "../CardTop";
 import { MainCardContainer } from "../MainCardCointainer";
+import { useState } from "react";
 
 export const AddProductPics = () => {
+  const [productImages, setProductImages] = useState([]);
+
+  const handleFileChange = (event) => {
+    const allFiles = event.target.files;
+
+    // console.log(URL.createObjectURL(allFiles));
+
+    console.log(typeof allFiles);
+    console.log(allFiles);
+    console.log(Array.from(allFiles));
+    // console.log(allFiles.length);
+
+    const test = Array.from(allFiles).map((item, index) =>
+      URL.createObjectURL(item),
+    );
+
+    console.log(test);
+
+    // console.log(URL.createObjectURL(allFiles[0]));
+
+    // const test = allFiles.map((file) => console.log(file));
+
+    // console.log(test);
+
+    setProductImages((prev) => [...prev, ...test]);
+  };
+
   return (
     <MainCardContainer>
       <CardTop heading="Pictures" headingStyle="text-sm"></CardTop>
@@ -19,13 +47,15 @@ export const AddProductPics = () => {
             id="product-image-upload"
             accept="image/*"
             className="hidden"
+            multiple
+            onChange={handleFileChange}
           />
         </label>
         <div className="grid grid-cols-3 gap-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-          <DisplayUploadedPic />
-          <DisplayUploadedPic />
-          <DisplayUploadedPic />
-          <DisplayUploadedPic />
+          {productImages &&
+            productImages.map((item, index) => (
+              <DisplayUploadedPic key={index} src={item} />
+            ))}
         </div>
       </div>
     </MainCardContainer>
@@ -35,8 +65,11 @@ export const AddProductPics = () => {
 const DisplayUploadedPic = ({ src = "/images/1.jpg" }) => {
   return (
     <div className="relative aspect-square w-full overflow-hidden rounded">
-      <img src={src} alt="thumbnail" />
-      <button className="absolute right-1 top-1 flex items-center justify-center rounded-full bg-red-500 text-sm text-white lg:size-4 xl:size-5">
+      <img src={src} alt="thumbnail" className="h-full w-full object-cover" />
+      <button
+        onClick={() => console.log("Hello")}
+        className="absolute right-1 top-1 flex items-center justify-center rounded-full bg-red-500 text-sm text-white lg:size-4 xl:size-5"
+      >
         <MdClose />
       </button>
     </div>

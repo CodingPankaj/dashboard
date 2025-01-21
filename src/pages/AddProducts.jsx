@@ -10,6 +10,9 @@ import { AddProductSpecification } from "../components/product/AddProductSpecifi
 import { ProductPreview } from "../components/product/ProductPreview";
 
 export const AddProducts = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <MainSection>
       <MainCardContainer>
@@ -21,7 +24,7 @@ export const AddProducts = () => {
         </CardTop>
       </MainCardContainer>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-[1fr_auto]">
-        <form className="grid grid-cols-1 gap-5">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5">
           <AddProductBasicInfo />
           <AddProductPics />
           <AddProductPricing />
