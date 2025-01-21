@@ -9,26 +9,19 @@ export const AddProductPics = () => {
   const handleFileChange = (event) => {
     const allFiles = event.target.files;
 
-    // console.log(URL.createObjectURL(allFiles));
-
     console.log(typeof allFiles);
     console.log(allFiles);
-    console.log(Array.from(allFiles));
-    // console.log(allFiles.length);
+    // console.log(URL.createObjectURL(allFiles));
 
-    const test = Array.from(allFiles).map((item, index) =>
+    console.log(Array.from(allFiles));
+
+    const fileUrls = Array.from(allFiles).map((item, index) =>
       URL.createObjectURL(item),
     );
 
-    console.log(test);
+    console.log(fileUrls);
 
-    // console.log(URL.createObjectURL(allFiles[0]));
-
-    // const test = allFiles.map((file) => console.log(file));
-
-    // console.log(test);
-
-    setProductImages((prev) => [...prev, ...test]);
+    setProductImages((prev) => [...prev, ...fileUrls]);
   };
 
   return (
